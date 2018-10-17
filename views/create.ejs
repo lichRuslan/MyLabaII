@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include blocks/head.ejs %>
+<body>
+    <% include blocks/headers.ejs %>
+    <form method="post">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">Введиет ваш вопрос!</span>
+            </div>
+            <input type="text" name="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+
+    
+
+    <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>true</th>
+                <th>fouls</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <input type="text" name="textTrue"> 
+                </td>
+                <td>
+                    <input type="text" name="textFouls"> 
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

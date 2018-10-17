@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <% include blocks/head.ejs %>
+  <body>
+      <% include blocks/headers.ejs %>
+  
+      <form method="POST" action="/index">
+          
+          <ul class="list-group">
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Вопрос</th>
+                      <th>варианты ответа</th>
+                     
+                    </tr>
+                  </thead>
+                  <% arr.forEach(function(item){ %>
+                    
+                  <tbody>
+                    <tr>
+                      <th scope="row"><%= idQ++ %></th>
+                      <td><%= item %></td>
+                      <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions<%= otQ++ %>" id="inlineRadio1" value="true">
+                                <label class="form-check-label" for="inlineRadio1">ДА <%= arr2 %> </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions<%= otQ2++ %>" id="inlineRadio2" value="false">
+                                <label class="form-check-label" for="inlineRadio2">НЕТ <%= arr3 %></label>
+                            </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <% }); %>
+                </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+
+        <a href="/create">Add</a>
+  <ul>
+    <% arr.forEach(function(item){ %>
+      <li>
+        <%= item %>
+      </li>
+      <% }); %>
+  </ul>
+       
+    
+    <% include blocks/script.ejs %>
+  </body>
+</html>
