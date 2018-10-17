@@ -1,0 +1,28 @@
+{
+  "name": "laba",
+  "version": "1.0.0",
+  "description": "MY_laba_I",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lichRuslan/MyLabaII.git"
+  },
+  "keywords": [
+    "404647ruslan"
+  ],
+  "author": "Ruslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lichRuslan/MyLabaII/issues"
+  },
+  "homepage": "https://github.com/lichRuslan/MyLabaII#readme"
+}
